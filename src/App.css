@@ -1,0 +1,16 @@
+header {
+  background: purple;
+  height: 60px;
+  line-height: 1.8;
+}
+nav {
+  height: 100%;
+  line-height: 2.5;
+}
+a.nav-link {
+  color: white !important;
+}
+.logo {
+  color: white;
+  font-size: 30px;
+}
