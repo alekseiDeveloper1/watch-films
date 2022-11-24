@@ -7,10 +7,17 @@ nav {
   height: 100%;
   line-height: 2.5;
 }
-a.nav-link {
+.white {
   color: white !important;
 }
 .logo {
   color: white;
   font-size: 30px;
+}
+.card-text {
+  flex: 1 1 auto;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
 }
