@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -11,15 +12,9 @@ const Header = () => {
                         </Col>
                         <Col md={4}>
                             <Nav>
-                                <Nav.Item>
-                                    <Nav.Link className='white' href="#">Home</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link className='white' href="#">About</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link className='white' href="#">Contacts</Nav.Link>
-                                </Nav.Item>
+                                <Link to="/">Home</Link>
+                                <Link to="/add">Add Card</Link>
+                                <Link to="/favorite">Favorite</Link>
                             </Nav>
                         </Col>
                     </div>

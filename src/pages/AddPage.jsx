@@ -28,7 +28,6 @@ const AddPage = () => {
                             <Form.Label>Upload image</Form.Label>
                             <Form.Control type="file" />
                         </Form.Group>
-
                         <Button variant="primary" type="submit">Submit</Button>
                     </Form>
                 </Row>
