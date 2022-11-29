@@ -1,18 +1,11 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
-import { Container } from 'react-bootstrap';
-import NavBar from './components/NavBar';
-import CardList from './components/CardList';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Container>
-        <NavBar/>
-        <CardList/>
-      </Container>
+      <HomePage/>
     </div>
   );
 }
