@@ -19,13 +19,19 @@ const initialState = {
             title: "interstellar", 
             desc: "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.", 
             img: "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
-            video: "http://www.youtube.com/embed/zSWdZVtXT7E"
+            video: "http://www.youtube.com/embed/zSWdZVtXT7E",
         }
-    ]
+    ],
+    favorite: []
 }
 
 export const reducer = (state = initialState, action) => {
     switch (action.type) {
+        case "ADD_FAVORITE":
+            console.log('state: ',{...state, favorite: [...state.favorite, {id: action.id}]});
+            return {...state, favorite: [...state.favorite, {id: action.id}]}
+        case "CREATE_FILM":
+            return {...state, cards: [...state.cards, action.data]}
         default:
             return state
     }
